@@ -1,0 +1,60 @@
+/* ==================================================================== */
+   /* from modern-accordion-shortcode plugin... */
+@font-face {
+   font-family:'masfont';
+   src:url('fonts/masfont.eot?-f6mss7');
+   src:url('fonts/masfont.eot?#iefix-f6mss7') format('embedded-opentype'),url('fonts/masfont.woff?-f6mss7') format('woff'),url('fonts/masfont.ttf?-f6mss7') format('truetype'),url('fonts/masfont.svg?-f6mss7#masfont') format('svg');
+   font-weight:normal;
+   font-style:normal;
+}
+/* ==================================================================== */
+div#cal-accordingly-preload {
+   display:none;
+}
+.cal-accordingly {
+   margin-left:0px;
+   //width:100%;
+   width:197px;
+}
+.cal-accordingly-header {
+   background-color:#cccc99;
+   background-image:url(../gfx/cal/cal-accordingly-grad.png);
+   background-repeat:repeat-x;
+   padding:2px 8px 6px 20px;
+   font-weight:bold;
+   font-size:12pt;
+   color:#8b4513;
+   cursor:pointer;
+   border-top:1px solid #b4ae61;
+   border-right:1px solid #b4ae61;
+   border-left:1px solid #b4ae61;
+}
+.cal-accordingly-header::before {
+   content:url(../gfx/cal/arrow-right.png);
+   position:relative;
+   top:3px;
+}
+.cal-accordingly-header.opened::before {
+   content:url(../gfx/cal/arrow-down.png);
+}
+.cal-accordingly-content-wrapper {
+   display: none;
+   margin:0;
+   padding:0px 0px 0px 0px;
+   //background-color:#ffffff;
+}
+.cal-accordingly-content {
+   margin:0;
+   padding:0px 0px 0px 0px;
+   //background-color:#efefef;
+   //border-top:1px solid #b4ae61;
+   //border-right:1px solid #b4ae61;
+   //border-left:1px solid #b4ae61;
+}
+h3.cal-accordingly-item-h3 {
+   color:#8b4513;
+   margin:4px 0 8px 0;
+}
+p.cal-accordingly-item-p {
+   margin:0 0 6px 0;
+}
