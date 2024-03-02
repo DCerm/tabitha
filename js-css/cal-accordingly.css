@@ -18,7 +18,7 @@ div#cal-accordingly-preload {
 }
 .cal-accordingly-header {
    background-color:#cccc99;
-   background-image:url(../gfx/cal/cal-accordingly-grad.png);
+   background-image:url(../tabitha/gfx/cal/cal-accordingly-grad.png);
    background-repeat:repeat-x;
    padding:2px 8px 6px 20px;
    font-weight:bold;
@@ -35,7 +35,7 @@ div#cal-accordingly-preload {
    top:3px;
 }
 .cal-accordingly-header.opened::before {
-   content:url(../gfx/cal/arrow-down.png);
+   content:url(../tabitha/gfx/cal/arrow-down.png);
 }
 .cal-accordingly-content-wrapper {
    display: none;
