@@ -2,13 +2,13 @@
 /* =========================================== */
 .nav-left {
    z-index:200;
-   position:fixed;
-   left:0;
+   position:;
+   left:;
    top:0;
    height:100%;
    width:100%;
    max-width:258px;
-   margin-left:-250px;
+   margin-left:;
    background-color: var(--panel-background-color);
    box-sizing:border-box;
    padding:10px;
@@ -16,12 +16,13 @@
    font-weight:bold;
    border-right:1px solid  var(--panel-border-color);
    transition:margin 200ms ease-in-out;
+   float: left
 }
 .nav-left.nav-left-open {
-   margin-left:0;
+   margin-left:;
 }
 .nav-left-toggle {
-   position:absolute;
+   position: absolute;
    right:-40px;
    top:20px;
    width:40px;
@@ -71,7 +72,7 @@ right-bottom...
    border-bottom-left-radius:6px;
 */
 .scrolly-down {
-   position:absolute;
+   position:;
    right:258px;
    bottom:146px;
    border-top-left-radius:6px;
@@ -83,7 +84,7 @@ right-bottom...
    opacity:0.7;
 }
 .scrolly-bottom {
-   position:absolute;
+   position:;
    right:258px;
    bottom:96px;
    border-top-left-radius:6px;
@@ -101,7 +102,7 @@ right-bottom...
    opacity:1.0;
 }
 .scrolly-top {
-   position:absolute;
+   position:;
    right:-41px;
    bottom:146px;
    border-top-right-radius:6px;
@@ -113,7 +114,7 @@ right-bottom...
    opacity:0.7;
 }
 .scrolly-up {
-   position:absolute;
+   position:;
    right:-41px;
    bottom:96px;
    border-top-right-radius:6px;
@@ -135,7 +136,7 @@ div#scrollyup-preload {
    display:none;
 }
 .lefty-up {
-   position:relative;
+   position:;
    top:1px;
    width:40px;
    height:40px;
@@ -152,7 +153,7 @@ div#scrollyup-preload {
    background-image:url(../tabitha/gfx/icons/scrollyuphover.png);
 }
 .righty-up {
-   position:relative;
+   position:;
    top:1px;
    width:40px;
    height:40px;
@@ -171,22 +172,23 @@ div#scrollyup-preload {
 /* =========================================== */
 .nav-right {
    z-index:100;
-   position:fixed;
+   position:;
    top:0px;
-   right:0;
+   right:;
    height:100%;
    width:100%;
    max-width:258px;
-   margin-right:-251px;
+   margin-right:;
    background-color: var(--panel-background-color);
    box-sizing:border-box;
    padding:10px;
    color:#ffffff;
    border-left:1px solid  var(--panel-border-color);
    transition:margin 200ms ease-in-out;
+   float: right;
 }
 .nav-right.nav-right-open {
-   margin-right:0;
+   margin-right:;
 }
 .nav-right-toggle {
    position:absolute;
