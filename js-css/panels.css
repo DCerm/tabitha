@@ -15,6 +15,10 @@
    font-weight:bold;
    border-right:1px solid  var(--panel-border-color);
    transition:margin 200ms ease-in-out;
+<<<<<<< HEAD
+=======
+   float: left;
+>>>>>>> cfa0ee4f5d567cefb908f26e30e459d80b164076
 }
 .nav-left.nav-left-open {
    margin-left:0;
