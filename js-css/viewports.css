@@ -49,3 +49,33 @@
       //background-color:#ff4500;
    }
 }
+
+/*==============================================
+Responsive Tablet       Responsive Mobile
+================================================*/
+@media screen and (max-width: 1200px) {
+  body {
+  max-width: 100vw;
+  }
+  .nav-left {
+  margin-left: -258px;
+  }
+  .nav-right {
+  margin-left: 100vw;
+  }
+  .nav-right.nav-right-open {
+   right:0;
+  }
+  #select-day {
+   display:block;
+   }
+   .h2main {
+   height:auto;
+   }
+}
+
+@media screen and (max-width: 950px) {
+.grid-item {
+   max-width: ;
+   }
+}

@@ -29,11 +29,14 @@ $('.scrolly-up').on('click', function(e) {
 function closeLeftOpenRight() {
    $("#left-nav").removeClass("nav-left-open");
    $("#right-nav").addClass('nav-right-open');
-}
+};
 function closeRightOpenLeft() {
    $("#right-nav").removeClass("nav-right-open");
    $("#left-nav").addClass('nav-left-open');
-}
+};
 function openLeft() {
    $("#left-nav").addClass('nav-left-open');
-}
+};
+$('.close-left-panel').click (function (){
+   $("#left-nav").removeClass("nav-left-open");
+});

@@ -2,8 +2,7 @@
 /* =========================================== */
 .nav-left {
    z-index:200;
-   position:;
-   left:;
+   position: fixed;
    top:0;
    height:100%;
    width:100%;
@@ -16,10 +15,9 @@
    font-weight:bold;
    border-right:1px solid  var(--panel-border-color);
    transition:margin 200ms ease-in-out;
-   float: left
 }
 .nav-left.nav-left-open {
-   margin-left:;
+   margin-left:0;
 }
 .nav-left-toggle {
    position: absolute;
@@ -27,7 +25,7 @@
    top:20px;
    width:40px;
    height:40px;
-   background-image:url(../tabitha/gfx/icons/panel-left-menu.png);
+   background-image:url(../gfx/icons/panel-left-menu.png);
    background-color: var(--panel-background-color);
    line-height:40px;
    text-decoration:none;
@@ -45,7 +43,7 @@
    //
 }
 a.nav-left-toggle:hover {
-   background-image:url(../tabitha/gfx/icons/panel-left-menu-hover.png);
+   background-image:url(../gfx/icons/panel-left-menu-hover.png);
 }
 /* =========================================== */
 /*
@@ -72,7 +70,7 @@ right-bottom...
    border-bottom-left-radius:6px;
 */
 .scrolly-down {
-   position:;
+   position:absolute;
    right:258px;
    bottom:146px;
    border-top-left-radius:6px;
@@ -80,18 +78,18 @@ right-bottom...
    width:40px;
    height:40px;
    background-color:  var(--scrolly-background-color);
-   background-image:url(../tabitha/gfx/icons/scrolly-down-next.png);
+   background-image:url(../gfx/icons/scrolly-down-next.png);
    opacity:0.7;
 }
 .scrolly-bottom {
-   position:;
+   position:absolute;
    right:258px;
    bottom:96px;
    border-top-left-radius:6px;
    border-bottom-left-radius:6px;
    width:40px;
    height:40px;
-   background-image:url(../tabitha/gfx/icons/scrolly-down-bottom.png);
+   background-image:url(../gfx/icons/scrolly-down-bottom.png);
    background-color:  var(--scrolly-background-color);
    opacity:0.7;
 }
@@ -102,26 +100,26 @@ right-bottom...
    opacity:1.0;
 }
 .scrolly-top {
-   position:;
+   position: absolute;
    right:-41px;
    bottom:146px;
    border-top-right-radius:6px;
    border-bottom-right-radius:6px;
    width:40px;
    height:40px;
-   background-image:url(../tabitha/gfx/icons/scrolly-up-top.png);
+   background-image:url(../gfx/icons/scrolly-up-top.png);
    background-color:  var(--scrolly-background-color);
    opacity:0.7;
 }
 .scrolly-up {
-   position:;
+   position: absolute;
    right:-41px;
    bottom:96px;
    border-top-right-radius:6px;
    border-bottom-right-radius:6px;
    width:40px;
    height:40px;
-   background-image:url(../tabitha/gfx/icons/scrolly-up-next.png);
+   background-image:url(../gfx/icons/scrolly-up-next.png);
    background-color:  var(--scrolly-background-color);
    opacity:0.7;
 }
@@ -136,13 +134,13 @@ div#scrollyup-preload {
    display:none;
 }
 .lefty-up {
-   position:;
+   position: ;
    top:1px;
    width:40px;
    height:40px;
    margin:auto;
    background-color: var(--primary-color);
-   background-image:url(../tabitha/gfx/icons/scrollyup.png);
+   background-image:url(../gfx/icons/scrollyup.png);
    border-top:1px solid var(--primary-color);
    border-right:1px solid var(--primary-color);
    border-left:1px solid var(--primary-color);
@@ -150,7 +148,7 @@ div#scrollyup-preload {
    border-top-left-radius:6px;
 }
 .lefty-up:hover {
-   background-image:url(../tabitha/gfx/icons/scrollyuphover.png);
+   background-image:url(../gfx/icons/scrollyuphover.png);
 }
 .righty-up {
    position:;
@@ -159,7 +157,7 @@ div#scrollyup-preload {
    height:40px;
    margin:auto;
    background-color: var(--primary-color);
-   background-image:url(../tabitha/gfx/icons/scrollyup.png);
+   background-image:url(../gfx/icons/scrollyup.png);
    border-top:1px solid var(--primary-color);
    border-right:1px solid var(--primary-color);
    border-left:1px solid var(--primary-color);
@@ -167,28 +165,27 @@ div#scrollyup-preload {
    border-top-left-radius:6px;
 }
 .righty-up:hover {
-   background-image:url(../tabitha/gfx/icons/scrollyuphover.png);
+   background-image:url(../gfx/icons/scrollyuphover.png);
 }
 /* =========================================== */
+
 .nav-right {
    z-index:100;
-   position:;
-   top:0px;
-   right:;
+   position: fixed;
+   top:0;
    height:100%;
    width:100%;
    max-width:258px;
-   margin-right:;
+   margin-left: 995px;
    background-color: var(--panel-background-color);
    box-sizing:border-box;
    padding:10px;
    color:#ffffff;
    border-left:1px solid  var(--panel-border-color);
    transition:margin 200ms ease-in-out;
-   float: right;
 }
 .nav-right.nav-right-open {
-   margin-right:;
+   margin-right:0;
 }
 .nav-right-toggle {
    position:absolute;
@@ -205,6 +202,8 @@ div#scrollyup-preload {
    border-left:1px solid  var(--panel-border-color);
    border-top-left-radius:6px;
    border-bottom-left-radius:6px;
+   background-image:url(../gfx/cal/02.png);
+   
 }
 .nav-right-toggle:before {
    font:1em "Helvetica", sans-serif;
@@ -212,6 +211,10 @@ div#scrollyup-preload {
    color:#000000;
    position:relative;
    top:6px;
+   content:"19"; 
+}
+.nav-right-toggle:hover:before {
+   color:#ff0000;
 }
 .nav-right.nav-right-open .nav-right-toggle:before {
    //

@@ -11,6 +11,7 @@ body {
    line-height:14.5pt;
    font-weight:500;
    margin: auto;
+   overflow-x: ;
 }
 .wrapper {
    min-width:280px;
@@ -198,7 +199,7 @@ ul {
    /*margin:0px 6px 8px -18px;*/
    list-style-position:outside;
    margin:0px 6px 8px 0px;
-   list-style-image:url('../tabitha/gfx/flechita.png');
+   list-style-image:url('../gfx/flechita.png');
 }
 ul.dbd {
    list-style-position:outside;
@@ -232,16 +233,16 @@ li {
    margin-bottom:4px;
 }
 li.sli {
-   list-style-image:url('../tabitha/gfx/magnify.png');
+   list-style-image:url('../gfx/magnify.png');
 }
 li.rli {
-   list-style-image:url('../tabitha/gfx/flechita.png');
+   list-style-image:url('../gfx/flechita.png');
 }
 li.dli {
-   list-style-image:url('../tabitha/gfx/flechitalt.png');
+   list-style-image:url('../gfx/flechitalt.png');
 }
 li.cli {
-   list-style-image:url('../tabitha/gfx/flechita-red.png');
+   list-style-image:url('../gfx/flechita-red.png');
    color:#ffd700;
    background-color: var(--scrolly-background-color);
    padding-left:12px;
@@ -262,39 +263,39 @@ ul#related {
 #related li#rlink {
    font-size:10pt;
    list-style-position:outside;
-   list-style-image:url('../tabitha/gfx/flechita.png');
+   list-style-image:url('../gfx/flechita.png');
    margin-left:-8px;
 }
 #related li#nolink {
    font-size:10pt;
    list-style-position:outside;
-   list-style-image:url('../tabitha/gfx/flechitalt.png');
+   list-style-image:url('../gfx/flechitalt.png');
    margin-left:-8px;
 }
 #related li#rlinkp {
    font-size:10pt;
    list-style-position:outside;
-   list-style-image:url('../tabitha/gfx/flechita.png');
+   list-style-image:url('../gfx/flechita.png');
 	padding-bottom:4px;
    margin-left:-8px;
 }
 #related li#rlinkb {
    font-size:10pt;
    list-style-position:outside;
-   list-style-image:url('../tabitha/gfx/flechita.png');
+   list-style-image:url('../gfx/flechita.png');
    color: var(--related-color);
    margin-left:-8px;
 }
 #related li#slink {
    font-size:10pt;
    list-style-position:outside;
-   list-style-image:url('../tabitha/gfx/spotlight.png');
+   list-style-image:url('../gfx/spotlight.png');
    margin-left:-8px;
 }
 #related li#slinkb {
    font-size:10pt;
    list-style-position:outside;
-   list-style-image:url('../tabitha/gfx/spotlight.png');
+   list-style-image:url('../gfx/spotlight.png');
    color: var(--related-color);
    margin-left:-8px;
 }
@@ -397,11 +398,13 @@ p.relatedULp {
 .lefty::-webkit-scrollbar-thumb:inactive {
    background:rgba(189, 183, 107, 0.8);
 }
+
 .righty {
    display:block;
    height:100%;
    overflow-x:hidden;
    overflow-y:auto;
+   position: ;
 }
 .righty::-webkit-scrollbar {
    width:10px;
@@ -441,16 +444,16 @@ p.relatedULp {
 }
 ul.menu {
    list-style-position:outside;
-   list-style-image:url('../tabitha/gfx/flechita.png');
+   list-style-image:url('../gfx/flechita.png');
    margin:0px 18px 8px -18px;
 }
 ul.menu-item-sub {
    list-style-position:outside;
-   list-style-image:url('../tabitha/gfx/flechita.png');
+   list-style-image:url('../gfx/flechita.png');
    margin:0px 0px 8px -24px;
 }
 li.menu-item-active {
-   list-style-image:url('../tabitha/gfx/flechita.png');
+   list-style-image:url('../gfx/flechita.png');
    color:#ffd700;
    background-color: var(--scrolly-background-color);
    padding-top:2px;
@@ -460,38 +463,38 @@ li.menu-item-active {
    border-radius:6px;
 }
 li.menu-item-link {
-   list-style-image:url('../tabitha/gfx/flechita.png');
+   list-style-image:url('../gfx/flechita.png');
    color: var(--primary-color);
    padding-top:2px;
    padding-bottom:4px;
 }
 /* li dropcaps ========================================= */
 li.dropcap1 {
-   list-style-image:url('../tabitha/gfx/dropcaps/slaphappy1.png');
+   list-style-image:url('../gfx/dropcaps/slaphappy1.png');
 }
 li.dropcap2 {
-   list-style-image:url('../tabitha/gfx/dropcaps/slaphappy2.png');
+   list-style-image:url('../gfx/dropcaps/slaphappy2.png');
 }
 li.dropcap3 {
-   list-style-image:url('../tabitha/gfx/dropcaps/slaphappy3.png');
+   list-style-image:url('../gfx/dropcaps/slaphappy3.png');
 }
 li.dropcap4 {
-   list-style-image:url('../tabitha/gfx/dropcaps/slaphappy4.png');
+   list-style-image:url('../gfx/dropcaps/slaphappy4.png');
 }
 li.dropcap5 {
-   list-style-image:url('../tabitha/gfx/dropcaps/slaphappy5.png');
+   list-style-image:url('../gfx/dropcaps/slaphappy5.png');
 }
 li.dropcap6 {
-   list-style-image:url('../tabitha/gfx/dropcaps/slaphappy6.png');
+   list-style-image:url('../gfx/dropcaps/slaphappy6.png');
 }
 li.dropcap7 {
-   list-style-image:url('../tabitha/gfx/dropcaps/slaphappy7.png');
+   list-style-image:url('../gfx/dropcaps/slaphappy7.png');
 }
 li.dropcap8 {
-   list-style-image:url('../tabitha/gfx/dropcaps/slaphappy8.png');
+   list-style-image:url('../gfx/dropcaps/slaphappy8.png');
 }
 li.dropcap9 {
-   list-style-image:url('../tabitha/gfx/dropcaps/slaphappy9.png');
+   list-style-image:url('../gfx/dropcaps/slaphappy9.png');
 }
 /* p ========================================= */
 p {
@@ -619,7 +622,7 @@ td.calLink {
 }
 .calHead {
    background-color: var(--image-wrap-border);
-   background-image:url(../tabitha/gfx/cal/calHeadBG.png);
+   background-image:url(../gfx/cal/calHeadBG.png);
    background-repeat:repeat-x;
    color: var(--scrolly-background-color);
    border-top:1px solid var(--scrolly-background-color);
@@ -644,12 +647,12 @@ td.calLink {
 }
 /* spotlight ========================================= */
 .sli.spotOn {
-   list-style-image:url('../tabitha/gfx/magnify.png');
+   list-style-image:url('../gfx/magnify.png');
    color:#da2443;
 	cursor:pointer;
 }
 .sli.spotOff {
-   list-style-image:url('../tabitha/gfx/magnify.png');
+   list-style-image:url('../gfx/magnify.png');
    color: var(--primary-color);
 }
 .spotlight-nail {
@@ -782,7 +785,7 @@ div.spotlight-img-cutline-fine {
 	top:1px;
 }
 .spotOffButton {
-   background-image:url(../tabitha/gfx/icons/closeSpotlight.png);
+   background-image:url(../gfx/icons/closeSpotlight.png);
    background-repeat:no-repeat;
    background-position:4px;
    padding:4px 6px 4px 22px;
@@ -795,7 +798,7 @@ div.spotlight-img-cutline-fine {
    -moz-box-shadow:2px 2px 4px var(--shadow);
 }
 .spotOffButton:hover {
-   background-image:url(../tabitha/gfx/icons/closeSpotlight2.png);
+   background-image:url(../gfx/icons/closeSpotlight2.png);
    border:1px solid var(--scrolly-background-color);
 }
 .adButtonWrap {
@@ -803,7 +806,7 @@ div.spotlight-img-cutline-fine {
    margin-right:21px;
 }
 .adButton {
-   background-image:url(../tabitha/gfx/icons/more2.png);
+   background-image:url(../gfx/icons/more2.png);
    background-repeat:no-repeat;
    background-position:4px;
    margin:6px 0px 0px 0px;
@@ -818,7 +821,7 @@ div.spotlight-img-cutline-fine {
    -moz-box-shadow:2px 2px 4px var(--shadow);
 }
 .adButton:hover {
-   //background-image:url(../tabitha/gfx/icons/more1.png);
+   //background-image:url(../gfx/icons/more1.png);
    border:1px solid var(--scrolly-background-color);
    color:#da2443;
 }
@@ -839,9 +842,26 @@ div.spotlight-img-cutline-fine {
    //text-align:center;
 }
 .grid-item {
-   text-align:center;
    width:186px;
    margin-bottom:14px;
+   padding:0 6px 0 4px; 
+   text-align:left;
+}
+.grid-item-inner {
+   width:176px; 
+   margin:0; 
+   border:1px solid var(--panel-background-color); 
+   background-color:var(--spotlight-wrap-background); 
+   -moz-border-radius:6px; 
+   border-radius:6px; 
+   -webkit-box-shadow:3px 3px 5px var(--shadow); 
+   -moz-box-shadow:3px 3px 5px var(--shadow);
+   padding:2px 10px 8px 10px;
+}
+.grid-item-inner img {
+   width:156px;
+   height:234px;
+   border:0;
 }
 .not-grid-item {
    text-align:center;
@@ -898,4 +918,13 @@ div.hideR {
    -moz-border-radius:4px;
    border-radius:4px;
 }
+#select-day {
+   display:none;
+   }
+#mary-payson-container {
+   data-masonry { 
+   itemSelector: ".grid-item", "columnWidth": 186, "gutter": 12 }'
+}
 /* ========================================= */
+
+
