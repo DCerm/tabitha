@@ -3,7 +3,7 @@
    <head>
    <!-- ======================================================== -->
       <meta charset="UTF-8" />
-      <title>mobile.ScanningWWII.com</title>
+      <title>ScanningWWII.com</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
   
@@ -960,12 +960,21 @@ Winston Churchill was not only the war's greatest leader, he was the free world'
 <center>
    <div id="scrolltarget-0"></div>
    <div class="wrapper" style="text-align:left;"><!-- begin main body wrapper -->
+  
       <div id="scrollCurrWrap-0" onclick="numScrollCurr = 0"><!-- begin scrollCurrWrap-0 -->
          <div class="squeeze-l-r">
             <header style="margin:0;">
 <img class="full-width" src="../tabitha/gfx/body-header.png" alt="ScanningWWII.com" title="ScanningWWII.com" />
             </header>
-         </div><!-- end squeeze-l-r -->
+      </div><!-- end squeeze-l-r -->
+     <!--Random header images-->
+     <div class="header-images">
+     <img id="img1"/>
+     <img id="img2"/>
+     <img id="img3"/>
+     </div>  
+     <!-- End Random header images-->
+
          <h2 class="h2main">WWII Day-By-Day &#8212; February 19</h2>
          <div class="squeeze-l-r">
             <table border="0" cellspacing="0" cellpadding="0">
@@ -1468,6 +1477,31 @@ Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatib
    <!--  <script type="text/javascript">
          $(document).ready(openLeft());
       </script> -->
+      <script defer>
+      (function randomHeaderImages() {
+  const images = ["https://wwii.today/images/headerPix/headerPix455.png",
+                  "https://wwii.today/images/headerPix/headerPix005.png",
+                  "https://wwii.today/images/headerPix/headerPix149.png",
+                  "https://wwii.today/images/headerPix/headerPix118.png",
+                  "https://wwii.today/images/headerPix/headerPix157.png",
+                  "https://wwii.today/images/headerPix/headerPix239.png",
+                  "https://wwii.today/images/headerPix/headerPix000a.png",
+                  "https://wwii.today/images/headerPix/headerPix000.png",
+                  "https://wwii.today/images/headerPix/headerPix001.png",
+                  "https://wwii.today/images/headerPix/headerPix002.png",
+                  "https://wwii.today/images/headerPix/headerPix018.png",
+                  "https://wwii.today/images/headerPix/headerPix027.png"
+                 ];
+  const x = Math.floor(Math.random() * images.length);
+  const y = Math.floor(Math.random() * images.length);
+  const z = Math.floor(Math.random() * images.length);
+  
+    $("#img1").attr("src", images[x]);
+    $("#img2").attr("src", images[y]);
+    $("#img3").attr("src", images[z]);
+    
+ })();
+ </script>
 <!-- ================================================================= -->
       <div id="spotoff-preload"><img src="../tabitha/gfx/icons/closeSpotlight2.png" /></div>
       <div id="scrollyup-preload"><img src="../tabitha/gfx/icons/scrollyuphover.png" /></div>

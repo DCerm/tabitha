@@ -921,10 +921,14 @@ div.hideR {
 #select-day {
    display:none;
    }
-#mary-payson-container {
-   data-masonry { 
-   itemSelector: ".grid-item", "columnWidth": 186, "gutter": 12 }'
+.header-images img {
+   width: 200px;
+   height: 68px; 
+   border-radius:20px;
 }
+#img1 {float:left}
+#img2 {margin:0 20px}
+#img3 {float:right}
 /* ========================================= */
 
 

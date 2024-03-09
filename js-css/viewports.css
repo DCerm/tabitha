@@ -78,4 +78,11 @@ Responsive Tablet       Responsive Mobile
 .grid-item {
    width: ;
    }
+.header-images img {
+   width: auto;
+   height: auto;
+   text-align: center;
+   margin: auto;
+   display: none;
+   }
 }

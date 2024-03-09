@@ -25,3 +25,7 @@ function getTodaysDate() {
    var strReturn = strWeekday+strMonth+" "+numDate+', '+numYear;
    return strReturn;
 }
+
+  
+  
+
