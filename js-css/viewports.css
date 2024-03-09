@@ -76,13 +76,11 @@ Responsive Tablet       Responsive Mobile
 
 @media screen and (max-width: 950px) {
 .grid-item {
-   width: ;
+   width:;
    }
+
 .header-images img {
-   width: auto;
-   height: auto;
-   text-align: center;
-   margin: auto;
+  
    display: none;
    }
 }
