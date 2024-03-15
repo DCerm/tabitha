@@ -39,4 +39,7 @@ function openLeft() {
 };
 $('.close-left-panel').click (function (){
    $("#left-nav").removeClass("nav-left-open");
+})
+$('.calLink').click (function (){
+   $("#right-nav").removeClass("nav-right-open");
 });

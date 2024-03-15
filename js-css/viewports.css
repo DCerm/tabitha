@@ -58,13 +58,13 @@ Responsive Tablet       Responsive Mobile
   max-width: 100vw;
   }
   .nav-left {
-  margin-left: -258px;
+  margin-left: -253px;
   }
   .nav-right {
-  margin-left: 100vw;
+  margin-left: calc(100vw - 5px);
   }
   .nav-right.nav-right-open {
-   right:0;
+   margin-left: calc(100vw - 258px);
   }
   #select-day {
    display:block;
@@ -74,11 +74,13 @@ Responsive Tablet       Responsive Mobile
    }
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 700px) {
 .grid-item {
    width:;
    }
-
+.nav-right-toggle {
+  top: 65px;
+}
 .header-images img {
   
    display: none;
