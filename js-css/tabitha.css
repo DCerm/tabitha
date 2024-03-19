@@ -828,40 +828,119 @@ div.spotlight-img-cutline-fine {
 /* mary-payson ===================================== */
 .squeeze-footer {
    //margin:0 auto;
-   //margin:10px 16px 0px 16px;
+   text-align: center;
+   /*margin:10px 16px 0px 16px;*/
 }
 .grid-wrap {
    //width:100%;
    //margin:0 auto;
    text-align:center;
    //padding:10px 21px 0px 21px;
-   //background-color:#ffd700;
+  background-color:#ffd700;
 }
 .grid {
-   //margin:0 auto;
-   //text-align:center;
+  /* //margin:0 auto;
+   //text-align:center;*/
+}
+.grid-left {
+   float: left;
+   margin-left: 12px;
+
+}
+.grid-center {
+   float: left;
+   width: 186px;
+   margin: 0px 10px;
+}
+.grid-right {
+   float: left;
+   width: 186px;
+   margin-left: 10px;
 }
 .grid-item {
    width:186px;
    margin-bottom:14px;
-   padding:0 6px 0 4px; 
-   text-align:left;
+   padding: 0 5px; 
+   text-align:;
 }
+
+
 .grid-item-inner {
    width:176px; 
-   margin:0; 
+   margin-bottom: 14px; 
    border:1px solid var(--panel-background-color); 
    background-color:var(--spotlight-wrap-background); 
    -moz-border-radius:6px; 
    border-radius:6px; 
    -webkit-box-shadow:3px 3px 5px var(--shadow); 
    -moz-box-shadow:3px 3px 5px var(--shadow);
-   padding:2px 10px 8px 10px;
+   padding:5px 0px 15px 15px; 
+   text-align: center;
+   
 }
-.grid-item-inner img {
+.grid-item-inner .grid-store {
+   font-size:9pt; 
+   color:#999999; 
+   margin:2px 0 4px 0;
+    text-align:left;
+}
+.grid-item-inner .grid-head {
+   width:146px; 
+   font-size:9pt; 
+   line-height:10pt; 
+   font-weight:bold; 
+   color:#444444; 
+   margin:2px 0 2px 0;
+   text-align:left;
+}
+.grid-head-desc {
+   width:140px; 
+   font-size:8pt; 
+   line-height:10pt; 
+   font-weight:bold; 
+   color:#666666; 
+   margin:2px 0 5px 6px;
+    text-align:left;
+}
+.ad-type {
+   width:146px; 
+   font-size:9pt; 
+   line-height:10pt; 
+   font-weight:normal; 
+   color:#777777; 
+   margin:0 0 5px;
+    text-align:left;
+}
+.desc {
+   width:146px; 
+   font-size:9pt; 
+   line-height:11pt; 
+   font-weight:normal; 
+   color:#333333;
+    text-align:left;
+}
+.grid-img {
    width:156px;
-   height:234px;
+   height:auto;
    border:0;
+   margin: 0;
+   text-align: left;
+   padding-bottom: 10px;
+}
+.grid-img img{
+   width:156px;
+   height:auto;
+   border:0;
+   margin: 0;
+   text-align: left;
+   padding-bottom: 10px;
+}
+#background {
+width:176px; 
+height:327px; 
+background:url('../gfx/CollingsFoundation.png'); 
+background-repeat:no-repeat; 
+margin-top:5px;
 }
 .not-grid-item {
    text-align:center;
@@ -926,9 +1005,9 @@ div.hideR {
    height: 68px; 
    border-radius:20px;
 }
-#img1 {float:left}
+#img1 {float:left;}
 #img2 {margin:0 20px}
-#img3 {float:right}
+#img3 {float:right;}
 /* ========================================= */
 
 
