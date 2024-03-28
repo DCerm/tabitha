@@ -7,7 +7,7 @@
    height:100%;
    width:100%;
    max-width:258px;
-   margin-left:;
+   margin-left:0;
    background-color: var(--panel-background-color);
    box-sizing:border-box;
    padding:10px;
@@ -15,6 +15,7 @@
    font-weight:bold;
    border-right:1px solid  var(--panel-border-color);
    transition:margin 200ms ease-in-out;
+   overflow-y: hidden;
 =======
    float: left;
 >>>>>>> cfa0ee4f5d567cefb908f26e30e459d80b164076

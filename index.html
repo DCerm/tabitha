@@ -27,8 +27,7 @@
 <!-- ================================================================= -->
        <!-- LEFT PANEL  -->
 <!-- ===================================================================== -->
-
-      <nav id="left-nav" name="left-nav" class="nav-left">
+      <nav id="left-nav" name="left-nav" class="nav-left" onmouseover="preventBodyScrollWithPane()" onmouseout="restoreScroll()">
          <a href="#" id="nav-left-toggle" class="nav-left-toggle"></a>
          <a href="#" id="scrolly-top" class="scrolly-top"></a>
          <a href="#" id="scrolly-up" class="scrolly-up"></a>
@@ -137,12 +136,11 @@ At 16, she faced an indefinite sentence behind barbed wire along with her family
          </div>
          <!-- end menu -->
       </nav>
-      
 
  <!-- ================================================================= -->
        <!-- RIGHT PANEL  -->
 <!-- ===================================================================== -->
-      <nav id="right-nav" name="right-nav" class="nav-right">
+      <nav id="right-nav" name="right-nav" class="nav-right" onmouseover="preventBodyScrollWithPane()" onmouseout="restoreScroll()">
          <a href="#" id="nav-right-toggle" class="nav-right-toggle"></a>
          <a href="#" id="scrolly-down" class="scrolly-down"></a>
          <a href="#" id="scrolly-bottom" class="scrolly-bottom"></a>
@@ -956,7 +954,7 @@ Winston Churchill was not only the war's greatest leader, he was the free world'
 <!-- =================================================================
       MAIN PAGE      MAIN PAGE      MAIN PAGE         MAIN PAGE 
      ================================================================= -->
-<center>
+<center class="main">
    <div id="scrolltarget-0"></div>
    <div class="wrapper" style="text-align:left;"><!-- begin main body wrapper -->
   
@@ -1465,9 +1463,14 @@ Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatib
       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
       <script type="text/javascript" src="../tabitha/js-css/panels.js"></script>
       <script type="text/javascript" src="../tabitha/js-css/cal-accordingly.js"></script>
-   <!--  <script type="text/javascript">
-         $(document).ready(openLeft());
-      </script> -->
+    <script defer type="text/javascript">
+        function preventBodyScrollWithPane() {
+          document.body.style.overflowY = "hidden";
+        }
+        function restoreScroll() {
+          document.body.style.overflowY = "scroll";
+        }
+      </script> 
       <script defer>
       (function randomHeaderImages() {
   const images = ["https://wwii.today/images/headerPix/headerPix455.png",

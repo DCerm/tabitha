@@ -11,7 +11,7 @@ body {
    line-height:14.5pt;
    font-weight:500;
    margin: auto;
-   overflow-x: ;
+   overflow-y: ;
 }
 .wrapper {
    min-width:280px;
@@ -833,7 +833,7 @@ div.spotlight-img-cutline-fine {
 }
 .grid-wrap {
    //width:100%;
-   //margin:0 auto;
+   margin:0 auto;
    text-align:center;
    //padding:10px 21px 0px 21px;
   background-color:#ffd700;
