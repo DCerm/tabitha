@@ -935,6 +935,19 @@ div.spotlight-img-cutline-fine {
    text-align: left;
    padding-bottom: 10px;
 }
+.bottom-grid {
+font-size:11pt; 
+text-align:left; 
+padding:0px 12px 2px 12px; 
+margin:12px 12px 8px 21px; 
+background-color:#eee8cc; 
+border:1px solid #cccc99; 
+-moz-border-radius:8px; 
+border-radius:8px; 
+-webkit-box-shadow:3px 3px 5px #cccccc; 
+-moz-box-shadow:3px 3px 5px #cccccc; 
+clear:both;
+}
 #background {
 width:176px; 
 height:327px; 

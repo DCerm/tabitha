@@ -72,6 +72,9 @@ Responsive Tablet       Responsive Mobile
    .h2main {
    height:auto;
    }
+   .grid-item, .grid-item-inner {
+   clear: both;
+   }
 }
 
 @media screen and (max-width: 700px) {
@@ -93,10 +96,17 @@ Responsive Tablet       Responsive Mobile
  .grid-item, .grid-item-inner { 
    float: none;
    width: 78vw;
-   margin 0 auto;   
+   margin: 0 auto 14px auto; 
+   clear: both;
+   }
+ .grid-item {
+   padding: 0 2px;
    }
    .grid-item-inner { 
       padding: 5px 10px 10px 10px;
+  }
+  .bottom-grid {
+  margin:12px 12px 8px 12px; 
   }
   #background {
    width: 78vw;
