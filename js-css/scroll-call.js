@@ -75,6 +75,3 @@ function scrollToPrev() {
       $('html,body').animate({scrollTop: $("#"+scrollTargetPrev).offset().top}, 'fast');
    }
 }
-function preventBodyScrollWithPane() {
-  body.style.overflow-y = "hidden";
-}
