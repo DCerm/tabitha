@@ -58,7 +58,7 @@
                <li class="menu-item-link"><a href="">Bonus Days</a></li>
             </ul>
             <!-- begin social -->
-            <div class="menu-left-middle" style="width:214px; text-align:center;">
+           <div class="menu-left-middle" style="width:214px; text-align:center;">
                <div style="width:100%; margin:0; height:32px; padding-top:2px;">
                   <!-- facebook... -->
                   <div style="float:left; margin-left:50px;">
@@ -66,7 +66,7 @@
                      </div>
                   </div>
                   <!-- twitter... -->
-                  <div style="float:left; margin-left:14px;">
+                <div style="float:left; margin-left:14px;">
                      <div id="fixed-social-tw" style="width:27px; height:27px;"><a href="http://twitter.com/ScanningWWII" target="_blank"><img id="fixed-img-tw" src="../tabitha/gfx/social/tw.png" width="27" height="27" alt="" title="Twitter" border="0" /></a>
                      </div>
                   </div>
@@ -1493,6 +1493,17 @@ Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatib
     $("#img1").attr("src", images[x]);
     $("#img2").attr("src", images[y]);
     $("#img3").attr("src", images[z]);
+ })();
+ 
+ (function hideArrowIfContentLessThanViewportHeight() {
+   if ($(".lefty").height() < $(".nav-left").height()) {
+     $(".lefty-up").hide();
+     $(".lefty").css("height", "94%");
+   } else {$(".lefty").height("100%")};
+    if ($(".righty").height() < $(".nav-left").height()) {
+     $(".righty-up").hide();
+     $(".righty").css("height", "94%");
+   } else {$(".righty").height("100%")};
  })();
  </script>
 <!-- ================================================================= -->
