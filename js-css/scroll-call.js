@@ -1,4 +1,5 @@
 function toggleSpotlight(numSpotlight) {
+   $(".spotlight-div").hide();
    var e = document.getElementById(numSpotlight);
    if (e.style.display == 'block') {
       var numScrollTo = numSpotlight+'s';
