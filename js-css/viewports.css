@@ -141,4 +141,7 @@ Responsive Tablet       Responsive Mobile
    margin: auto;
    padding:0;
    }
+.spotOffButton {
+   background-image:url(../gfx/icons/closeSpotlight2.png);
+   }
 }
