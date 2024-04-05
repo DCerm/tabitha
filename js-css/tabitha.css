@@ -12,6 +12,9 @@ body {
    font-weight:500;
    margin: auto;
 }
+body::-webkit-scrollbar {
+   width:0px;
+}
 .wrapper {
    min-width:280px;
    max-width:640px;

@@ -60,7 +60,47 @@ function scrollToFooter() {
 function scrollToMenuTop() {
    $('#left-nav').animate({scrollTop: 0}, 'slow');
 }
+/*
+// Function to scroll to the next section
 function scrollToNext() {
+    numScrollCurr++;
+    if (numScrollCurr >= numMaxTarget) {
+        numScrollCurr = 0;
+        $('html,body').animate({scrollTop: 0}, 'fast');
+    } else {
+        var scrollTargetNext = "scrolltarget-" + numScrollCurr;
+        $('html,body').animate({scrollTop: $("#" + scrollTargetNext).offset().top}, 'fast');
+    }
+}
+
+// Function to scroll to the previous section
+function scrollToPrev() {
+    numScrollCurr--;
+    if (numScrollCurr < 0) {
+        numScrollCurr = numMaxTarget - 1; // Update numScrollCurr for looping to the last section
+    }
+    var scrollTargetPrev = "scrolltarget-" + numScrollCurr;
+    $('html,body').animate({scrollTop: $("#" + scrollTargetPrev).offset().top}, 'fast');
+}*/
+ // Function to update numScrollCurr based on the current scroll position
+
+function scrollToNext() {
+function updateNumScrollCurr() {
+    var scrollTop = $(window).scrollTop();
+    
+    // Loop through each section ID to find the one in view
+    for (var i = 0; i <= numMaxTarget; i++) {
+        var sectionId = "scrolltarget-" + i;
+        var sectionTop = $("#" + sectionId).offset().top;
+        var sectionHeight = $("#" + sectionId).outerHeight();
+        
+        // Check if the current section is in view
+        if (scrollTop >= sectionTop {//&& scrollTop < sectionTop + sectionHeight) {
+            numScrollCurr = i; // Update numScrollCurr based on the section number
+            return;
+        }
+    }
+}
    numScrollCurr++;
    if (numScrollCurr > numMaxTarget) {
       numScrollCurr = 0;
