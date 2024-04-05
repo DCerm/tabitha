@@ -1,6 +1,13 @@
 function toggleSpotlight(numSpotlight) {
-   $(".spotlight-div").hide();
    var e = document.getElementById(numSpotlight);
+   var spotlights = document.querySelectorAll('.spotlight-div');
+
+    // Hide all spotlights except the one being toggled
+    spotlights.forEach(function (spotlight) {
+        if (spotlight.id !== numSpotlight) {
+            spotlight.style.display = 'none';
+        }
+    });
    if (e.style.display == 'block') {
       var numScrollTo = numSpotlight+'s';
       var viewableOffset = $("#"+numScrollTo).offset().top - $(window).scrollTop();
@@ -10,7 +17,7 @@ function toggleSpotlight(numSpotlight) {
       } else {
          $('html,body').animate({scrollTop: $("#"+numScrollTo).offset().top}, 'slow');
          e.style.display = 'none';
-      }
+      };
    } else {
       var numScrollTo = numSpotlight+'s';
       $('html,body').animate({scrollTop: $("#"+numScrollTo).offset().top}, 'slow');
@@ -18,6 +25,7 @@ function toggleSpotlight(numSpotlight) {
    }
 }
 function scrollToSpotlight(numSpotlight) {
+   $(".spotlight-div").hide();
    var e = document.getElementById(numSpotlight);
    var numScrollTo = numSpotlight+'s';
    $('html,body').animate({scrollTop: $("#"+numScrollTo).offset().top}, 'slow');
