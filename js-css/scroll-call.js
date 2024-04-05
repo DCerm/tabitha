@@ -85,22 +85,6 @@ function scrollToPrev() {
  // Function to update numScrollCurr based on the current scroll position
 
 function scrollToNext() {
-function updateNumScrollCurr() {
-    var scrollTop = $(window).scrollTop();
-    
-    // Loop through each section ID to find the one in view
-    for (var i = 0; i <= numMaxTarget; i++) {
-        var sectionId = "scrolltarget-" + i;
-        var sectionTop = $("#" + sectionId).offset().top;
-        var sectionHeight = $("#" + sectionId).outerHeight();
-        
-        // Check if the current section is in view
-        if (scrollTop >= sectionTop {//&& scrollTop < sectionTop + sectionHeight) {
-            numScrollCurr = i; // Update numScrollCurr based on the section number
-            return;
-        }
-    }
-}
    numScrollCurr++;
    if (numScrollCurr > numMaxTarget) {
       numScrollCurr = 0;

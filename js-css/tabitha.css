@@ -13,7 +13,7 @@ body {
    margin: auto;
 }
 body::-webkit-scrollbar {
-   width:0px;
+   width:0;
 }
 .wrapper {
    min-width:280px;
