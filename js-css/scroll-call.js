@@ -60,31 +60,56 @@ function scrollToFooter() {
 function scrollToMenuTop() {
    $('#left-nav').animate({scrollTop: 0}, 'slow');
 }
-/*
-// Function to scroll to the next section
-function scrollToNext() {
-    numScrollCurr++;
-    if (numScrollCurr >= numMaxTarget) {
-        numScrollCurr = 0;
-        $('html,body').animate({scrollTop: 0}, 'fast');
-    } else {
-        var scrollTargetNext = "scrolltarget-" + numScrollCurr;
-        $('html,body').animate({scrollTop: $("#" + scrollTargetNext).offset().top}, 'fast');
-    }
+// Function to get the current div at the top of the page
+function getCurrentDivAtTop() {
+    var scrollTop = $(window).scrollTop();
+    var windowHeight = $(window).height();
+    var topDivId = null;
+    
+    // Initialize variables to keep track of the closest div
+    var minDistance = Number.MAX_SAFE_INTEGER;
+    
+    // Loop through each div with class 'scrollBox'
+    $(".scrollBox").each(function() {
+        var divTop = $(this).offset().top;
+        var distanceToTop = Math.abs(divTop - scrollTop);
+        
+        // Check if the div is within the viewport and closer to the top
+        if (divTop >= scrollTop && divTop < scrollTop + windowHeight && distanceToTop < minDistance) {
+            minDistance = distanceToTop;
+            topDivId = $(this).attr("id");
+        }
+    });
+    
+    // Return the ID of the topmost div
+    return topDivId;
 }
 
-// Function to scroll to the previous section
-function scrollToPrev() {
-    numScrollCurr--;
-    if (numScrollCurr < 0) {
-        numScrollCurr = numMaxTarget - 1; // Update numScrollCurr for looping to the last section
-    }
-    var scrollTargetPrev = "scrolltarget-" + numScrollCurr;
-    $('html,body').animate({scrollTop: $("#" + scrollTargetPrev).offset().top}, 'fast');
-}*/
- // Function to update numScrollCurr based on the current scroll position
+
 
 function scrollToNext() {
+// Listen for scroll event
+  /* $(window).on("scroll", function() {
+    var topDivId = getCurrentDivAtTop(); // Get the ID of the topmost div
+    console.log(topDivId);
+    return topDivId;
+    });*/
+       var topDivId = getCurrentDivAtTop(); // Get the ID of the topmost div
+    const scrollTarget =  parseInt(topDivId.replace(/[^0-9]/g, ''), 10); 
+    let scrollTargetNum = scrollTarget + 1;
+      let scrollTargetNext = "scrolltarget-"+scrollTargetNum;
+      $('html,body').animate({scrollTop: $("#"+scrollTargetNext).offset().top}, 'fast');
+      console.log(scrollTarget, scrollTargetNext);
+};
+function scrollToPrev() {
+   var topDivId = getCurrentDivAtTop(); // Get the ID of the topmost div
+    const scrollTarget =  parseInt(topDivId.replace(/[^0-9]/g, ''), 10); 
+    let scrollTargetNum = scrollTarget - 1;
+      let scrollTargetNext = "scrolltarget-"+scrollTargetNum;
+      $('html,body').animate({scrollTop: $("#"+scrollTargetNext).offset().top}, 'fast');
+      console.log(scrollTarget, scrollTargetNext);
+};
+/*function scrollToNext() {
    numScrollCurr++;
    if (numScrollCurr > numMaxTarget) {
       numScrollCurr = 0;
@@ -107,4 +132,4 @@ function scrollToPrev() {
       var scrollTargetPrev = "scrolltarget-"+numScrollCurr;
       $('html,body').animate({scrollTop: $("#"+scrollTargetPrev).offset().top}, 'fast');
    }
-}
+}*/
